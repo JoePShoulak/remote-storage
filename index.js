@@ -11,10 +11,4 @@ app.use(cors());
 
 app.use("/tasks", taskRoutes);
 
-app.get("/", (req, res) => {
-    console.log("[TEST]!");
-
-    res.send("Hello, world!");
-})
-
 app.listen(port, () => console.log(`Server running on port: http://localhost:${port}`))
